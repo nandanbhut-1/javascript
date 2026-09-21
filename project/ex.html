@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+
+<script>
+
+alert("Welcome to Calculator");
+
+while (true)
+{
+    var num1 = Number(prompt("Enter first number:"));
+    var num2 = Number(prompt("Enter second number:"));
+    var operator = prompt("Enter operator (+, -, *, /) or E to Exit:");
+
+    var result;
+
+    switch (operator)
+    {
+        case "+":
+            result = num1 + num2;
+            alert("Result = " + result);
+            break;
+
+        case "-":
+            result = num1 - num2;
+            alert("Result = " + result);
+            break;
+
+        case "*":
+            result = num1 * num2;
+            alert("Result = " + result);
+            break;
+
+        case "/":
+            if (num2 == 0)
+            {
+                alert("Cannot divide by zero");
+            }
+            else
+            {
+                result = num1 / num2;
+                alert("Result = " + result);
+            }
+            break;
+
+        case "E":
+        case "e":
+            alert("Thank you for using Calculator");
+            break;
+
+        default:
+            alert("Invalid operator");
+    }
+
+    if (operator == "E" || operator == "e")
+    {
+        break;
+    }
+}
+
+</script>
+
+</body>
+</html>
+
