@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(15, 14, 14);
+}
+.score{
+    background-color: rgb(255, 171, 240);
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    font-family: verdana;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.score p{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+b{
+    font-weight: normal;
+    flex-grow: 1;
+}
+.timer{
+    background-color: rgb(254, 202, 202);
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    font-family: cursive;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.questions{
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ques{
+    font-weight: bold;
+    font-size: 24px;
+}
+.optn{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding:0px 20px;
+}
+.optn aside{
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.bttn button{
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    border-radius: 8px;
+    border: none;
+    &:hover{
+        background-color: orange;
+    }
+}
+
+.result{
+    background-color: rgb(255, 133, 133);
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    padding: 20px;
+}
+.result button{
+    margin: 10px;
+    background-color: rgb(249, 247, 247);
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    border-radius: 8px;
+    border: none;
+    &:hover{
+        background-color: brown;
+    }
+}
+
+.none{
+    display: none;
+}
